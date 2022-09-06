@@ -183,3 +183,4 @@ testtube
 checkpoints
 # If it's a Mac
 .DS_Store
+/models/ldm/stable-diffusion-v1c/

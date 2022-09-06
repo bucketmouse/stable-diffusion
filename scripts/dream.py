@@ -7,6 +7,7 @@ import os
 import re
 import sys
 import copy
+import random
 import warnings
 import time
 import ldm.dream.readline
@@ -138,6 +139,10 @@ def main_loop(t2i, outdir, prompt_as_dir, parser, infile):
         # up the parser
         command = command.replace("'", "\\'")
 
+#        for s in re.findall(r'({(.*?)})', command):
+ #           rand = s[1].split("|")
+  #          command = command.replace(s[0],random.choice (rand))
+  
         try:
             elements = shlex.split(command)
         except ValueError as e:
